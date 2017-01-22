@@ -1,0 +1,24 @@
+{
+  "name": "inferno-cli",
+  "version": "1.0.0",
+  "description": "inferno cli tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install -g"
+  },
+  "bin": {
+    "inferno-cli": "index.js"
+  },
+  "keywords": [
+    "inferno",
+    "webpack",
+    "cli"
+  ],
+  "author": "clitetailor",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "fs-extra": "^2.0.0"
+  }
+}
