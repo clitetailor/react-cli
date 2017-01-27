@@ -5,7 +5,6 @@ const fsExtra = require('fs-extra');
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
-const spawn = require('child_process').spawn;
 const exec = require('child_process').exec;
 
 function init(initDirectory) {
@@ -20,7 +19,7 @@ function init(initDirectory) {
     console.log(chalk.blue('Installing packages via npm ...'));
     console.log();
 
-    const npm = spawn('npm', ['install'], {
+    const npm = exec('npm install', {
       cwd: initDirectory
     });
 
