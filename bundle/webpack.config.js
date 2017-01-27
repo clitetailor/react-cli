@@ -12,6 +12,12 @@ module.exports = {
 		]
 	},
 
+	devServer: {
+		contentBase: path.join(__dirname, "dist"),
+		compress: true,
+		port: 9000
+	},
+
 	context: path.resolve(__dirname, 'app'),
 	
 	output: {
@@ -19,7 +25,7 @@ module.exports = {
 		filename: "[name].js",
 	},
 
-	devtool: "source-map",
+	devtool: "cheap-eval-source-map",
 	target: "web",
 
 	module: {

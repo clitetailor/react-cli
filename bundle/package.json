@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --watch"
+    "start": "webpack-dev-server --open",
+    "build": "webpack --watch --progress --colors --env production"
   },
   "author": "clitetailor",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
-    "webpack": "^2.2.0"
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
