@@ -1,16 +1,16 @@
 {
-  "name": "inferno-cli",
+  "name": "react-cli",
   "version": "1.0.0",
-  "description": "inferno cli tool",
+  "description": "react cli tool",
   "main": "index.js",
   "scripts": {
     "start": "npm install -g"
   },
   "bin": {
-    "inferno-cli": "index.js"
+    "react-cli": "index.js"
   },
   "keywords": [
-    "inferno",
+    "react",
     "webpack",
     "cli"
   ],

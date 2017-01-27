@@ -1,6 +1,3 @@
 {
-	"presets": ["env"],
-	"plugins": [["inferno", {
-		"imports": true
-	}]] 
+	"presets": ["react"]
 }

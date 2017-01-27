@@ -1,1 +1,10 @@
-/node_modules/
+# dependencies
+node_modules
+
+# production
+dist
+
+# misc
+.env
+.DS_Store
+npm-debug.log

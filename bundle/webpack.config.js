@@ -3,8 +3,16 @@ const path = require('path')
 
 module.exports = {
 	entry: {
-		main: './app/index.jsx'
+		main: './index.jsx',
+		vendor: [
+			'react',
+			'react-dom',
+			'react-router',
+			'jquery'
+		]
 	},
+
+	context: path.resolve(__dirname, 'app'),
 	
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -42,8 +50,12 @@ module.exports = {
 			test: /\.css?$/,
 			use: [
 				'style-loader',
-				'css-loader',
-				'stylus-loader'
+				'css-loader'
+			]
+		}, {
+			test: /\.(png|jpg|jpeg|svg)$/,
+			use: [
+				'file-loader?name=assets/[name].[ext]'
 			]
 		}],
 	},
@@ -58,8 +70,8 @@ module.exports = {
 	},
 
 	plugins: [
-		new webpack.LoaderOptionsPlugin({
-			minimize: true
-		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'vendor'
+		})
 	]
 }

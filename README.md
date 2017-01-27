@@ -1,4 +1,4 @@
-Inferno Cli
+React Cli
 ===========
 
 Setup
@@ -11,17 +11,17 @@ npm install -g
 Getting Started
 ---------------
 
-Create a new inferno project in the current folder
+Create a new react project
 
 ```bash
-inferno-cli init
+react-cli new my-project
+cd my-project
 ```
 
-Create a new inferno project
+Create a new react project in the current folder
 
 ```bash
-inferno-cli new my-project
-cd my-project
+react-cli init
 ```
 
 Build
