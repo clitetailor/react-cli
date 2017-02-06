@@ -1,15 +1,16 @@
 {
-  "name": "react-app",
+  "name": "react-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "build": "webpack --watch --progress --colors --env production"
   },
   "author": "clitetailor",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -25,6 +26,7 @@
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
+    "url-loader": "^0.5.7",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^1.16.2"
   }
