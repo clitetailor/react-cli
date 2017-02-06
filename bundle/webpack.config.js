@@ -59,7 +59,7 @@ module.exports = {
 				'css-loader'
 			]
 		}, {
-			test: /\.(png|jpg|jpeg|svg)$/,
+			test: /\.(png|jpg|jpeg|svg|ico)$/,
 			use: [
 				'file-loader?name=assets/[name].[ext]'
 			]
